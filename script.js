@@ -117,13 +117,13 @@ const wishMessage = document.getElementById("wishMessage");
 
 // 🔵 Play Alone when entering site
 window.addEventListener("click", () => {
-    aloneMusic.play();
+    paperRings.play();
 }, { once: true });
 
 // 🔵 When clicking Ready -> Birthday page
-toBirthday.onclick = () => { 
-    showPage(pageBirthday); 
-};
+//toBirthday.onclick = () => { 
+//    showPage(pageBirthday); 
+// };
 
 // 🔵 When clicking Celebrate button -> Go to countdown page
 celebrateBtn.onclick = () => {
@@ -132,8 +132,8 @@ celebrateBtn.onclick = () => {
 };
 
 function startCountdown() {
-    aloneMusic.pause(); // STOP Alone music
-    aloneMusic.currentTime = 0;
+    paperRings.pause(); // STOP Paper Rings Music
+    paperRings.currentTime = 0;
 
     let count = 3;
     countdownText.style.display = "block";
