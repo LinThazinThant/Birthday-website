@@ -390,7 +390,7 @@ button {
 .polaroid-wrap {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px; /* Gap between photos */
+    gap: 20px; /* Gap between photos */
 }
 
 .polaroid {
@@ -398,7 +398,7 @@ button {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    width: calc(50% - 15px); /* Adjust width for three columns */
+    flex: 0 0 calc(50% - 10px);
 }
 
 /* Button for celebration */
