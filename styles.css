@@ -147,9 +147,8 @@ button {
 }
 .polaroid img {
     width: 100%;
-    height: auto;        /* IMPORTANT */
-    display: block;
-    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
 }
 .polaroid span {
     display: block;
