@@ -147,10 +147,9 @@ button {
 }
 .polaroid img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    object-position: center; 
+    height: auto;        /* IMPORTANT */
     display: block;
+    border-radius: 10px;
 }
 .polaroid span {
     display: block;
