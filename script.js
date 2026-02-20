@@ -79,8 +79,8 @@ yesBtn.addEventListener("click", () => {
     }
 
     // 3rd click → go to YES page
-    yesBtn.style.position = "static"; // reset position
-    showPage(document.getElementById("pageYes"));
+    //yesBtn.style.position = "static"; // reset position
+    //showPage(document.getElementById("pageYes"));
 });
 
 function moveYesButton() {
