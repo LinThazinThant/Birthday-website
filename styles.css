@@ -398,7 +398,7 @@ button {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    width: calc(33% - 10px); /* Adjust width for three columns */
+    width: calc(50% - 15px); /* Adjust width for three columns */
 }
 
 /* Button for celebration */
