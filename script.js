@@ -184,10 +184,13 @@ function startBirthday() {
     }, 15000);
 
     setTimeout(() => {
+    if (flame) {
         flame.style.display = "none";
-        wishMessage.textContent = "Wishes come true!!";
-    }, 25000);
+    }
 
+    wishMessage.textContent = "Wishes come true!!";
+}, 25000);
+    
     setTimeout(() => {
         wishMessage.style.display = "none";
     }, 29000);
