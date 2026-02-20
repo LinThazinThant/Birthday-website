@@ -171,12 +171,11 @@ button {
 
 .polaroid {
     background: #fff;
-    padding: 70px; /* Adjust padding */
-    border-radius: 10px; /* Slightly rounded corners */
-    width: 350px; /* Set a fixed width */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    transform: rotate(-2deg); /* Slight tilt for aesthetic */
-    transition: transform 0.3s; /* Smooth transform on hover */
+    padding: 60px 60px 110px 60px;  /* thicker bottom */
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    width: 380px;      /* FIXED width */
+    overflow: hidden;
 }
 
 .polaroid:hover {
