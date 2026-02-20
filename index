@@ -12,7 +12,7 @@
 <div class="hearts"></div>
 
 <!-- Background Music (Paper Rings) -->
-<audio id="aloneMusic" loop>
+<audio id="paperRings" loop>
     <source src="paperRings.mp3" type="audio/mpeg">
 </audio>
 
