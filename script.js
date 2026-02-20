@@ -174,7 +174,7 @@ function startBirthday() {
 
     setTimeout(() => {
         lyricBox.textContent = "祝你生日快樂!";
-        for (let i = 0; i < 10; i++) createFirework();
+        //for (let i = 0; i < 10; i++) createFirework();
     }, 12000);
     
     setTimeout(() => {
