@@ -190,7 +190,7 @@ function startBirthday() {
 
     setTimeout(() => {
         wishMessage.style.display = "none";
-    }, 18000);
+    }, 22000);
 }
 
 
