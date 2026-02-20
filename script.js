@@ -64,31 +64,32 @@ function startHearts() {
 
 
 // ================= BUTTONS =================
-// Select the YES button
-const yesBtn = document.getElementById('yesBtn');
-let yesClickCount = 0; // Initialize a counter for the YES button clicks
+// ================= YES BUTTON FUN =================
+const yesBtn = document.getElementById("yesBtn");
+let yesClickCount = 0;
 
-// Function to move the YES button around
+yesBtn.addEventListener("click", () => {
+
+    yesClickCount++;
+
+    if (yesClickCount <= 2) {
+        moveYesButton();
+    } else {
+        yesBtn.style.display = "none";
+        showPage(document.getElementById("pageYes"));
+    }
+});
+
 function moveYesButton() {
     const viewportWidth = window.innerWidth;
     const viewportHeight = window.innerHeight;
 
-    // Generate random positions
-    const randomX = Math.random() * (viewportWidth - 150); // Adjust for button width
-    const randomY = Math.random() * (viewportHeight - 50); // Adjust for button height
+    const randomX = Math.random() * (viewportWidth - 150);
+    const randomY = Math.random() * (viewportHeight - 60);
 
-    // Move the YES button to the new random position
-    yesBtn.style.position = 'absolute'; // Ensure it's positioned absolutely
-    yesBtn.style.left = `${randomX}px`;
-    yesBtn.style.top = `${randomY}px`;
-  
-    // Increment the click count
-    yesClickCount++;
-
-    // If clicked more than 2 times, hide the YES button and show only NO
-    if (yesClickCount > 2) {
-        yesBtn.style.display = 'none'; // Hide YES button
-    }
+    yesBtn.style.position = "absolute";
+    yesBtn.style.left = randomX + "px";
+    yesBtn.style.top = randomY + "px";
 }
 
 document.getElementById("noBtn").onclick = () => {
