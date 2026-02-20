@@ -620,11 +620,3 @@ button {
     display: none;
 }
 
-.polaroid {
-    text-align: center;
-}
-
-.polaroid img {
-    display: block;
-    margin: 0 auto;   /* centers horizontally */
-}
