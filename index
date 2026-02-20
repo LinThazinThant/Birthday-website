@@ -11,9 +11,9 @@
 <div class="fireworks"></div>
 <div class="hearts"></div>
 
-<!-- Background Music (Alan Walker - Alone) -->
+<!-- Background Music (Paper Rings) -->
 <audio id="aloneMusic" loop>
-    <source src="alone.mp3" type="audio/mpeg">
+    <source src="paperRings.mp3" type="audio/mpeg">
 </audio>
 
 <!-- Birthday Song -->
