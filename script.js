@@ -173,15 +173,20 @@ function startBirthday() {
     }, 7500);
 
     setTimeout(() => {
+        lyricBox.textContent = "祝你生日快樂!";
+        for (let i = 0; i < 10; i++) createFirework();
+    }, 12000);
+    
+    setTimeout(() => {
         lyricBox.textContent = "";
         wishMessage.style.display = "block";
         wishMessage.textContent = "Make a wish, girls!";
-    }, 12000);
+    }, 15000);
 
     setTimeout(() => {
         flame.style.display = "none";
         wishMessage.textContent = "Wishes come true!!";
-    }, 15000);
+    }, 20000);
 
     setTimeout(() => {
         wishMessage.style.display = "none";
