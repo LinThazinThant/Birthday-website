@@ -72,22 +72,25 @@ yesBtn.addEventListener("click", () => {
 
     yesClickCount++;
 
+    // First 2 clicks → move
     if (yesClickCount <= 2) {
         moveYesButton();
-    } else {
-        yesBtn.style.display = "none";
-        showPage(document.getElementById("pageYes"));
+        return;
     }
+
+    // 3rd click → go to YES page
+    yesBtn.style.position = "static"; // reset position
+    showPage(document.getElementById("pageYes"));
 });
 
 function moveYesButton() {
     const viewportWidth = window.innerWidth;
     const viewportHeight = window.innerHeight;
 
-    const randomX = Math.random() * (viewportWidth - 150);
+    const randomX = Math.random() * (viewportWidth - 120);
     const randomY = Math.random() * (viewportHeight - 60);
 
-    yesBtn.style.position = "absolute";
+    yesBtn.style.position = "fixed";   // IMPORTANT: use fixed
     yesBtn.style.left = randomX + "px";
     yesBtn.style.top = randomY + "px";
 }
