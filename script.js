@@ -78,6 +78,10 @@ yesBtn.addEventListener("click", () => {
         return;
     }
 
+    if (yesClickCount > 2) {
+        yesBtn.style.display = 'none'; // Hide YES button
+    }
+    
     // 3rd click → go to YES page
     //yesBtn.style.position = "static"; // reset position
     //showPage(document.getElementById("pageYes"));
