@@ -107,7 +107,7 @@ celebrateBtn.onclick = () => {
 };
 
 // Event listener for the Time for Celebration button
-const aloneMusic = document.getElementById("aloneMusic");
+const paperRings = document.getElementById("paperRings");
 const birthdayMusic = document.getElementById("birthdayMusic");
 
 const pageBirthdayCountdown = document.getElementById("pageBirthdayCountdown");
