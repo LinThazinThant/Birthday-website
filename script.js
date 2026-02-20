@@ -1,3 +1,5 @@
+alert("JS is connected!");
+
 const pages = document.querySelectorAll(".page");
 const hearts = document.querySelector(".hearts");
 
