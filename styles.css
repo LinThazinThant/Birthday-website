@@ -1,16 +1,12 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    height: 100vh;
+    min-height: 100vh;   /* change from height */
     background: #B5DDEA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*min-height: 100vh;
-    background: #B5DDEA;*/
     font-family: "Times New Roman", Times, serif;
-    overflow: hidden;
+    overflow-x: hidden;  /* allow vertical growth */
 }
+
 .lower-text {
     margin-top: 100px;
 }
