@@ -1,28 +1,24 @@
-* { margin: 0; padding: 0; box-sizing: border-box; } 
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 html, body {
     height: 100%;
 }
 
 body {
-    min-height: 100vh;   
-    background: #B5DDEA;    
+    min-height: 100vh;   /* ✅ instead of height */
+    background: #B5DDEA;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Times New Roman", Times, serif;
+    /* ❌ remove overflow: hidden */
 }
-
 .lower-text {
     margin-top: 100px;
 }
 
 /* Fireworks */
-.fireworks { 
-    position: fixed; 
-    inset: 0; 
-    pointer-events: none; 
-    z-index: 0; } 
+.fireworks { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
 .firework {
     position: absolute;
     width: 6px; height: 6px;
@@ -30,8 +26,8 @@ body {
     animation: explode 1.5s ease-out forwards;
 }
 @keyframes explode {
-    0% { transform: scale(0); opacity: 1; }    
-    100% { transform: scale(15); opacity: 0; }    
+    0% { transform: scale(0); opacity: 1; }
+    100% { transform: scale(15); opacity: 0; }
 }
 
 /* Hearts */
@@ -43,7 +39,7 @@ body {
 }
 .heart {
     position: absolute;
-    color: #ff4d6d; 
+    color: #ff4d6d;
     font-size: 18px;
     animation: fall 4s linear forwards;
 }
@@ -52,9 +48,9 @@ body {
     100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
 }
 
-/* Pages Navigation System */
+/* Pages */
 .page { display: none; text-align: center; position: relative; z-index: 2; }
-.page.active { display: block; } 
+.page.active { display: block; }
 
 /* Headings */
 h2 {
@@ -175,15 +171,15 @@ button {
     gap: 40px; /* Adjust gap for spacing */
     justify-content: center;
     flex-wrap: wrap;
-    margin: 30px 30px; 
+    /*margin: 30px 30px; 
     position: relative; /* Ensure relative positioning for stacking */
 }
 
 .polaroid {
     background: #fff;
-    padding: 20px; /* Adjust padding */
+    padding: 10px; /* Adjust padding */
     border-radius: 10px; /* Slightly rounded corners */
-    width: 350px; /* Set a fixed width */
+    /*width: 350px; /* Set a fixed width */
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     transform: rotate(-2deg); /* Slight tilt for aesthetic */
     transition: transform 0.3s; /* Smooth transform on hover */
@@ -209,19 +205,24 @@ button {
 
 /* Add a filmstrip effect */
 .photo-album {
+    width: 100%;
+    max-width: 900px;   /* limit width */
+    margin: 0 auto;     /* center */
+}
+/*.photo-album {
     display: flex;
-    overflow-x: auto; /* Allow horizontal scrolling */
-    padding: 10px 0; /* Padding for the scrolling area */
+    overflow-x: auto; /* Allow horizontal scrolling 
+    padding: 10px 0; /* Padding for the scrolling area 
 }
 
 .photo-album::-webkit-scrollbar {
-    height: 8px; /* Scrollbar height */
+    height: 8px; /* Scrollbar height 
 }
 
 .photo-album::-webkit-scrollbar-thumb {
-    background: #ccc; /* Scrollbar color */
-    border-radius: 10px; /* Rounded scrollbar */
-}
+    background: #ccc; /* Scrollbar color 
+    border-radius: 10px; /* Rounded scrollbar 
+}*/
 
 .slider-container {
   width: 300px;        /* visible area */
@@ -623,4 +624,3 @@ button {
     color: pink;
     display: none;
 }
-
